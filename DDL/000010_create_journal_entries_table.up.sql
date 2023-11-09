@@ -16,11 +16,11 @@ CREATE TABLE accounts
 );
 
 COMMENT ON TABLE  accounts IS '勘定科目テーブル';
-COMMENT ON COLUMN accounts.journal_entered_at IS '勘定科目名';
-COMMENT ON COLUMN accounts.debit_account_id   IS '科目区分ID';
-COMMENT ON COLUMN accounts.debit_amount       IS '大分類ID';
-COMMENT ON COLUMN accounts.credit_account_id  IS '中分類ID';
-COMMENT ON COLUMN accounts.credit_amount      IS '小分類ID';
+COMMENT ON COLUMN accounts.journal_entered_at IS '仕訳日付';
+COMMENT ON COLUMN accounts.debit_account_id   IS '借方勘定科目';
+COMMENT ON COLUMN accounts.debit_amount       IS '借方金額';
+COMMENT ON COLUMN accounts.credit_account_id  IS '貸方勘定科目';
+COMMENT ON COLUMN accounts.credit_amount      IS '貸方金額';
 COMMENT ON COLUMN accounts.created_at         IS '作成日時';
 COMMENT ON COLUMN accounts.created_by         IS '作成者';
 COMMENT ON COLUMN accounts.updated_at         IS '更新日時';
