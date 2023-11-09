@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS accounts CASCADE;
 CREATE TABLE accounts
 (
   id                  SERIAL PRIMARY KEY,
-  journal_entered_at  TIMESTAMP WITH TIME ZONE  NOT NULL,
+  journal_entered_at  DATE                      NOT NULL DEFAULT CURRENT_DATE,
   debit_account_id    INTEGER                   NOT NULL,
   debit_amount        INTEGER                   NOT NULL,
   credit_account_id   INTEGER                   NOT NULL,
